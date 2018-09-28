@@ -10,3 +10,5 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 
 ### 使用方法
 仅适用于Centos7
+
+> bash <(curl -L -s raw.githubusercontent.com/lmc999/OpenvpnForGames/master/onekeyopenvpn.sh)
