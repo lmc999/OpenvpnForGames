@@ -21,8 +21,10 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 
 ●用Winscp等软件登入VPS,下载目录/etc/openvpn/client/中的所有文件到本地备用
 
-●下载windows版udpspeeder和udp2raw到本地,和刚才在VPS下载的文件放在同一个目录
+●下载windows版udpspeeder和udp2raw到本地,和刚才在VPS下载的文件放在同一个文件夹内，文件夹改名为client
 https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/speederv2.exe
 https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
 
 ●安装Openvpn Windows客户端，下载地址自己找
+
+●将client文件夹复制到目录:
