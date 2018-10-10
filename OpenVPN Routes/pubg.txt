@@ -1,3 +1,5 @@
+route-nopull
+max-routes 1000
 route 119.81.0.0 255.255.0.0 vpn_gateway
 route 169.56.0.0 255.255.0.0 vpn_gateway
 route 161.202.0.0 255.255.0.0 vpn_gateway
