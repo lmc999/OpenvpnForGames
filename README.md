@@ -11,7 +11,7 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 ### 使用方法
 仅适用于Centos7
 
-> bash <(curl -L -s raw.githubusercontent.com/lmc999/OpenvpnForGames/master/openvpnforgames.sh)
+> bash <(curl -L -s https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/openvpnforgames.sh)
 
 ●运行完脚本后会安装好openvpn、udpspeeder、udp2raw这三个服务
 
