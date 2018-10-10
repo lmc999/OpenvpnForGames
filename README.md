@@ -6,9 +6,23 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 
 同时感谢udpspeeder和udp2raw作者 wangyu- (https://github.com/wangyu-) 如果没有他的程序就没有办法为自建游戏加速器提供这么好的网络环境。
 
-#### 使用场景：适合使用按量计费VPS搭建的Openvpn并且Openvpn只用于游戏用途。目前和2个朋友合租HK阿里云搭Openvpn玩吃鸡，因为VPS是按量计费需要节省流量。由于只有游戏IP走代理，目前一个月平均流量不到1G，每人成本10块不到。
+#### 使用场景：适合使用按量计费VPS(如阿里云)搭建的Openvpn。流量大户或全局代理用户建议绕道或直接使用yobabyshark大佬的版本。
 
 ### 使用方法
 仅适用于Centos7
 
-> bash <(curl -L -s raw.githubusercontent.com/lmc999/OpenvpnForGames/master/onekeyopenvpn.sh)
+> bash <(curl -L -s raw.githubusercontent.com/lmc999/OpenvpnForGames/master/openvpnforgames.sh)
+
+●运行完脚本后会安装好openvpn、udpspeeder、udp2raw这三个服务
+
+●并生成储存Openvpn登录账号密码的文件psw-file,文件存放地址:/etc/openvpn
+
+●默认登录账号:client，密码:client;可以vi/vim修改成自己设定的账号密码，格式是一行一组账号密码
+
+●用Winscp等软件登入VPS下载目录/etc/openvpn/client/下的所有文件到本地备用
+
+●下载windows版udpspeeder和udp2raw到本地,和刚才在VPS下载的文件放在同一个目录
+https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/speederv2.exe
+https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
+
+●安装Openvpn Windows客户端，下载地址自己找
