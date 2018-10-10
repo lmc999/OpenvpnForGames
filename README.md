@@ -19,7 +19,7 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 
 ●默认登录账号:client，密码:client;可以vi/vim修改成自己设定的账号密码，格式是一行一组账号密码
 
-●用Winscp等软件登入VPS下载目录/etc/openvpn/client/下的所有文件到本地备用
+●用Winscp等软件登入VPS,下载目录/etc/openvpn/client/中的所有文件到本地备用
 
 ●下载windows版udpspeeder和udp2raw到本地,和刚才在VPS下载的文件放在同一个目录
 https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/speederv2.exe
