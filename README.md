@@ -25,6 +25,13 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/speederv2.exe
 https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
 
-●安装Openvpn Windows客户端，下载地址自己找
+●安装Openvpn Windows客户端，安装WinPcap，下载地址自己找
 
-●将client文件夹复制到目录:
+●将client文件夹复制到路径 C:\Users\XXX(你的电脑用户名)\OpenVPN\config
+
+●运行Openvpn客户端，右下角通知栏找到Openvpn小电脑图标，右键点connect，输入账号密码即可连接成功。
+
+### 补充说明
+指定Openvpn走路由表的命令格式是：route + IP + 掩码 +  vpn_gateway，如 route 119.81.0.0 255.255.0.0 vpn_gateway。并且需要配合route-nopull和max-routes 1000这个两参数一起使用。
+
+默认生成的客户端配置文件client.ovpn是不含路由表的，如不自行添加路由表直接使用则会全局代理。添加好路由表的配置文件可以参考sample.ovpn，里面添加了pubg的路由规则。
