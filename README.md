@@ -17,7 +17,7 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 
 ●并生成储存Openvpn登录账号密码的文件psw-file,文件存放地址:/etc/openvpn
 
-●默认登录账号:client，密码:client;可以vi/vim修改成自己设定的账号密码，格式是一行一组账号密码
+●脚本默认的Openvpn登录账号:client，密码:client;可以vi/vim修改成自己设定的账号密码，格式是一行一组账号密码
 
 ●用Winscp等软件登入VPS,下载目录/etc/openvpn/client/中的所有文件到本地备用
 
