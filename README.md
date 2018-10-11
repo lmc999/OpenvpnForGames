@@ -31,7 +31,7 @@ https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
 
 ●运行Openvpn客户端，右下角通知栏找到Openvpn小电脑图标，右键点connect，输入账号密码即可连接成功。
 
-### 补充说明
+### 【补充说明】
 #### 关于路由表
 指定Openvpn走路由表的命令格式是：route + IP + 掩码 +  vpn_gateway，如 route 119.81.0.0 255.255.0.0 vpn_gateway。并且需要配合route-nopull和max-routes 1000这个两参数一起使用。
 
@@ -39,3 +39,12 @@ https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
 
 #### 关于Udpspeeder的默认Fec参数
 这个项目中的默认Fec参数是2:2，因本人使用阿里云网络本身比较稳定丢包很少，为了节省流量而使用2:2的参数。你一可以根据自己网络条件调整这一参数，调整时需要同时修改一键脚本里的参数数值和bat脚本里面的数值。
+
+#### 关于同时支持多款游戏的路由表
+有的人可能同时在玩多款游戏，现在有两个方法可以使Openvpn支持不同游戏的路由表
+
+第一，最简单的方法就是将两款游戏的路由表命令合并放到同一个Openvpn客户端配置文件中，Openvpn最多支持1000条路由命令
+
+第二，为第二款游戏配置单独的Openvpn客户端配置文件。
+
+假设你第二款玩的游戏是CSGO，●创建一个文件夹名叫csgo，将client文件夹里所有文件复制进csgo文件夹中。●将csgo文件夹复制到路径 C:\Users\XXX(你的电脑用户名)\OpenVPN\config。●将原本的client.ovpn, client_down.bat, client_pre.bat分别更名为csgo.ovpn, csgo_down.bat, csgo_pre.bat ●然后用CSGO的路由命令替换掉csgo.ovpn中的上一款游戏的路由命令。●最后连接Openvpn时选择csgo即可。
