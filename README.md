@@ -47,4 +47,14 @@ https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
 
 第二，为第二款游戏配置单独的Openvpn客户端配置文件。
 
-假设你第二款玩的游戏是CSGO，●创建一个文件夹名叫csgo，将client文件夹里所有文件复制进csgo文件夹中。●将csgo文件夹复制到路径 C:\Users\XXX(你的电脑用户名)\OpenVPN\config。●将原本的client.ovpn, client_down.bat, client_pre.bat分别更名为csgo.ovpn, csgo_down.bat, csgo_pre.bat ●然后用CSGO的路由命令替换掉csgo.ovpn中的上一款游戏的路由命令。●最后连接Openvpn时选择csgo即可。
+假设你第二款玩的游戏是CSGO
+
+●创建一个文件夹名叫csgo，将client文件夹里所有文件复制进csgo文件夹中。
+
+●将csgo文件夹复制到路径 C:\Users\XXX(你的电脑用户名)\OpenVPN\config。
+
+●将原本的client.ovpn, client_down.bat, client_pre.bat分别更名为csgo.ovpn, csgo_down.bat, csgo_pre.bat 
+
+●然后用CSGO的路由命令替换掉csgo.ovpn中的上一款游戏的路由命令。
+
+●最后连接Openvpn时选择csgo即可。
