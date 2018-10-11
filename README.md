@@ -8,7 +8,7 @@ yobabyshark大佬原repo地址:https://github.com/yobabyshark/onekeyopenvpn
 
 #### 使用场景：适合使用按量计费VPS(如阿里云)搭建的Openvpn。流量大户或全局代理用户建议绕道或直接使用yobabyshark大佬的版本。
 
-### 使用方法
+### 【使用方法】
 仅适用于Centos7
 
 > bash <(curl -L -s https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/openvpnforgames.sh)
