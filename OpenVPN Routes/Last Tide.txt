@@ -1,5 +1,5 @@
 route-nopull
-max-routes 1000
+
 route 67.222.32.0 255.255.240.0 vpn_gateway
 route 23.192.0.0 255.224.0.0 vpn_gateway
 route 23.0.0.0 255.240.0.0 vpn_gateway
