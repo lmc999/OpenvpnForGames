@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/lmc999/OpenvpnForGames/master/udp2raw.exe
 
 ### 【补充说明】
 #### 关于路由表
-指定Openvpn走路由表的命令格式是：route + IP + 掩码 +  vpn_gateway，如 route 119.81.0.0 255.255.0.0 vpn_gateway。并且需要配合route-nopull和max-routes 1000这个两参数一起使用。
+指定Openvpn走路由表的命令格式是：route + IP + 掩码 +  vpn_gateway，如 route 119.81.0.0 255.255.0.0 vpn_gateway。并且需要配合route-nopull这条参数一起使用。
 
 默认生成的客户端配置文件client.ovpn是不含路由表的，如不自行添加路由表直接使用则会全局代理。添加好路由表的配置文件可以参考sample.ovpn，里面添加了pubg的路由规则。
 
