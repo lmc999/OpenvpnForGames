@@ -261,3 +261,4 @@ route 211.249.68.0 255.255.254.0 vpn_gateway
 route 211.249.70.0 255.255.254.0 vpn_gateway
 route 220.230.112.0 255.255.240.0 vpn_gateway
 route 220.230.184.0 255.255.252.0 vpn_gateway
+route 192.204.0.0 255.255.0.0 vpn_gateway
