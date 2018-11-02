@@ -4,8 +4,6 @@
 
 #安装epel源
 yum -y install wget
-wget http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
-rpm -ivh epel-release-7-11.noarch.rpm
 yum -y install epel-release
 
 #启用epel
